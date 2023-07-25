@@ -24,21 +24,27 @@ header {
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  margin: 0;
+  letter-spacing: 2px;
 }
 
 .subtitle {
   font-size: 1.2rem;
   font-style: italic;
+  margin-top: 5px;
 }
 
 .group-members {
   font-size: 1.1rem;
+  margin-top: 10px;
 }
 
 /* Main Content Styles */
 main {
   padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 section {
@@ -46,12 +52,33 @@ section {
 }
 
 section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 section p {
   font-size: 1.2rem;
+}
+
+/* Center and Resize the Presentation and Video */
+section iframe {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* Tools Used Styles */
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+section li {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
 }
 
 /* Footer Styles */
@@ -59,12 +86,20 @@ footer {
   background-color: #f8f9fa;
   text-align: center;
   padding: 10px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Hover Effect for Links */
+a:hover {
+  text-decoration: underline;
+  color: #0056b3;
 }
 
 /* Responsive Styles */
 @media (max-width: 600px) {
   header h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   
   .subtitle {
@@ -76,7 +111,7 @@ footer {
   }
   
   section h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   
   section p {
