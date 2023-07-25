@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  color: #333;
 }
 
 a {
@@ -30,20 +31,20 @@ header h1 {
 }
 
 .subtitle {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-style: italic;
   margin-top: 5px;
 }
 
 .group-members {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-top: 10px;
 }
 
 /* Main Content Styles */
 main {
   padding: 20px;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -52,15 +53,16 @@ section {
 }
 
 section h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 section p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  line-height: 1.6;
 }
 
 /* Center and Resize the Presentation and Video */
@@ -68,6 +70,8 @@ section iframe {
   display: block;
   margin: 0 auto;
   max-width: 100%;
+  width: 800px;
+  height: 450px;
 }
 
 /* Tools Used Styles */
@@ -77,8 +81,8 @@ section ul {
 }
 
 section li {
-  font-size: 1.2rem;
-  margin-bottom: 5px;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
 }
 
 /* Footer Styles */
@@ -86,7 +90,7 @@ footer {
   background-color: #f8f9fa;
   text-align: center;
   padding: 10px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #555;
 }
 
@@ -103,18 +107,23 @@ a:hover {
   }
   
   .subtitle {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   
   .group-members {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   
   section h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   
   section p {
-    font-size: 1rem;
+    font-size: 1.2rem;
+  }
+
+  section iframe {
+    width: 100%;
+    height: 300px;
   }
 }
