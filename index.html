@@ -2,23 +2,49 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Simple Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Pages Website</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Hello from the Frontend!</h1>
-  <button id="get-data-btn">Get Data from Backend</button>
-  <div id="backend-response"></div>
+  <header>
+    <h1>Cool Research Project</h1>
+    <p class="subtitle">How does the complexity of a project's database schema correlate with GitHub activity?</p>
+    <p class="group-members">Group Members: Rani Maklada, Neil Hamza, Jeries Shomaly, Bashar Yousef</p>
+  </header>
 
-  <script>
-    document.getElementById("get-data-btn").addEventListener("click", function () {
-      // JavaScript code to fetch data from the backend
-      fetch('/api')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('backend-response').textContent = data;
-        })
-        .catch(error => console.error('Error fetching data:', error));
-    });
-  </script>
+  <main>
+    <section id="description">
+      <h2>Project Description</h2>
+      <p>
+        We aim to produce a report outlining the correlation between the complexity of the database schema and the level of activity (commits and issues) in Java and Python projects on GitHub.
+        This report will provide insights into how the complexity of a project's database schema might impact the maintenance and management of the project.
+      </p>
+    </section>
+
+    <section id="presentation">
+      <h2>Presentation</h2>
+      <!-- Embed or link your presentation here -->
+      <!-- Example: <iframe src="https://my.visme.co/view/n0q7yqoz-ke7lp9j1ryyo29mw" frameborder="0"></iframe> -->
+    </section>
+
+    <section id="video">
+      <h2>Project Video</h2>
+      <!-- Embed or link your video here -->
+      <!-- Example: <iframe src="https://drive.google.com/file/d/1I1wbh1OPV0UNCME3yP07tWTBWZTFkBeb/preview" frameborder="0"></iframe> -->
+    </section>
+
+    <section id="tools">
+      <h2>Tools Used</h2>
+      <ul>
+        <li>Gitana</li>
+        <li>DBDiagram.io</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Your Group Name. All rights reserved.</p>
+  </footer>
 </body>
 </html>
