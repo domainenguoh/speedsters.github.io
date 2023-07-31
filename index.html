@@ -21,7 +21,7 @@
         Our hypothesis is that as the complexity of the database schema increases, there will be a corresponding rise in the number of commits and issues on GitHub. This correlation can provide valuable insights into the challenges and maintenance efforts involved in managing such projects.
       </p>
       <p>
-        Our research focuses on analyzing a diverse set of Java and Python projects hosted on GitHub. By extracting data using Gitana, visualizing database schemas with DBDiagram.io, and analyzing images with OpenCV, we strive to gain deeper insights into how schema design impacts project development and management.
+        Our research focuses on analyzing a diverse set of projects hosted on GitHub. By searching using GitHub API, extracting data using Gitana, visualizing database schemas with DBDiagram.io, and analyzing images with OpenCV, we strive to gain deeper insights into how schema design impacts project development and management.
       </p>
     </section>
 
@@ -45,7 +45,7 @@
         Through this workflow, we aim to unveil the impact of data schema complexity on project development and management on GitHub.
       </p>
     </section>
-
+    
     <section id="presentation">
       <h2>Presentation</h2>
       <div class="iframe-container">
@@ -59,14 +59,14 @@
         <iframe src="https://drive.google.com/file/d/1I1wbh1OPV0UNCME3yP07tWTBWZTFkBeb/preview" frameborder="0"></iframe>
       </div>
     </section>
-
+    
     <section id="tools">
       <h2>Tools Used</h2>
       <p>
         For our research, we utilized the following powerful tools:
       </p>
       <ul>
-        <li><strong>GitHub API:</strong> To search for repositories containing .dbml files on GitHub.</li>
+        <li><strong>GitHub API:</strong> We use the GitHub API to search for repositories containing .dbml files on GitHub. The API allows us to extract the list of files, along with the owner and repository names.</li>
         <li><strong>Gitana:</strong> A data extraction tool to collect code, commit histories, and issue data from Java and Python projects on GitHub.</li>
         <li><strong>DBDiagram.io:</strong> A visual database design tool for generating diagrams representing the complexity of database schemas.</li>
         <li><strong>Selenium:</strong> To automate the process of uploading DBML files to DBDiagram.io.</li>
