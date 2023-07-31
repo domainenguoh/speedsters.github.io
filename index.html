@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GitHub Pages Website</title>
+  <title>Data Schema Complexity Analysis - GitHub Research Project</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Cool Research Project</h1>
-    <p class="subtitle">Analyzing the Correlation between Database Schema Complexity and GitHub Activity</p>
+    <h1>Data Schema Complexity Analysis</h1>
+    <p class="subtitle">Exploring the Correlation between Data Schema Complexity and GitHub Activity</p>
     <p class="group-members">Group Members: Rani Maklada, Neil Hamza, Jeries Shomaly, Bashar Yousef</p>
   </header>
 
@@ -17,13 +17,32 @@
     <section id="description">
       <h2>About the Project</h2>
       <p>
-        Welcome to our cool research project! In this study, we aim to investigate the relationship between the complexity of a project's database schema and its GitHub activity.
-        We hypothesize that as the complexity of the database schema increases, there will be a corresponding rise in the number of commits and issues on GitHub.
-        This correlation can provide valuable insights into the challenges and maintenance efforts involved in managing such projects.
+        Welcome to our fascinating research project! Here, we delve into the intriguing relationship between the complexity of a project's database schema and its GitHub activity.
+        Our hypothesis is that as the complexity of the database schema increases, there will be a corresponding rise in the number of commits and issues on GitHub. This correlation can provide valuable insights into the challenges and maintenance efforts involved in managing such projects.
       </p>
       <p>
-        Our research focuses on analyzing a sample of Java and Python projects on GitHub, extracting data using Gitana, and visualizing the database schemas with DBDiagram.io.
-        By comparing the complexity of the schemas with GitHub activities, we seek to shed light on how schema design impacts project development and management.
+        Our research focuses on analyzing a diverse set of Java and Python projects hosted on GitHub. By extracting data using Gitana, visualizing database schemas with DBDiagram.io, and analyzing images with OpenCV, we strive to gain deeper insights into how schema design impacts project development and management.
+      </p>
+    </section>
+
+    <section id="workflow">
+      <h2>Research Workflow</h2>
+      <p>
+        Our research follows a systematic workflow that involves multiple stages:
+      </p>
+      <ol>
+        <li>Use GitHub API to search for repositories with .dbml files.</li>
+        <li>Store the repository details in a TXT list for further processing.</li>
+        <li>Clone each repository locally using Git to analyze it further.</li>
+        <li>Utilize Gitana to extract commit histories, issues, and user data from Java and Python projects.</li>
+        <li>Store the extracted data in a MySQL database for each repository.</li>
+        <li>Locate the DBML files in each repository and upload them to DBDiagram.io using Selenium.</li>
+        <li>Extract the data structure image and analyze its complexity using OpenCV.</li>
+        <li>Analyze the repository complexity based on metrics like commits and issues using MySQL data.</li>
+        <li>Establish a correlation between data schema complexity and repository complexity.</li>
+      </ol>
+      <p>
+        Through this workflow, we aim to unveil the impact of data schema complexity on project development and management on GitHub.
       </p>
     </section>
 
@@ -44,17 +63,21 @@
     <section id="tools">
       <h2>Tools Used</h2>
       <p>
-        For our research, we employed two powerful tools:
+        For our research, we utilized the following powerful tools:
       </p>
       <ul>
-        <li><strong>Gitana:</strong> A data extraction tool that helps us collect code, commit histories, and issue data from Java and Python projects on GitHub.</li>
-        <li><strong>DBDiagram.io:</strong> A visual database design tool that allows us to generate diagrams representing the complexity of the database schemas of each project.</li>
+        <li><strong>GitHub API:</strong> To search for repositories containing .dbml files on GitHub.</li>
+        <li><strong>Gitana:</strong> A data extraction tool to collect code, commit histories, and issue data from Java and Python projects on GitHub.</li>
+        <li><strong>DBDiagram.io:</strong> A visual database design tool for generating diagrams representing the complexity of database schemas.</li>
+        <li><strong>Selenium:</strong> To automate the process of uploading DBML files to DBDiagram.io.</li>
+        <li><strong>OpenCV:</strong> For image analysis to measure complexity based on shape, size, and line count.</li>
+        <li><strong>MySQL:</strong> To store and analyze the extracted data for each repository.</li>
       </ul>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2023 Your Group Name. All rights reserved.</p>
+    <p>&copy; 2023 Data Schema Complexity Analysis. All rights reserved.</p>
   </footer>
 </body>
 </html>
