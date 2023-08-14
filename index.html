@@ -28,23 +28,40 @@
     <section id="workflow">
       <h2>Research Workflow</h2>
       <p>
-        Our research follows a systematic workflow that involves multiple stages:
+        To ensure the precision, accuracy, and comprehensiveness of our research, we've established a systematic and thorough workflow. This workflow guarantees that we obtain meaningful insights from the data while maintaining data integrity. The entire process can be divided into the following stages:
       </p>
       <ol>
-        <li>Use GitHub API to search for repositories with .dbml files.</li>
-        <li>Store the repository details in a TXT list for further processing.</li>
-        <li>Clone each repository locally using Git to analyze it further.</li>
-        <li>Utilize Gitana to extract commit histories, issues, and user data from Java and Python projects.</li>
-        <li>Store the extracted data in a MySQL database for each repository.</li>
-        <li>Locate the DBML files in each repository and upload them to DBDiagram.io using Selenium.</li>
-        <li>Extract the data structure image and analyze its complexity using OpenCV.</li>
-        <li>Analyze the repository complexity based on metrics like commits and issues using MySQL data.</li>
-        <li>Establish a correlation between data schema complexity and repository complexity.</li>
+        <li>Initial Project Setup: Define the scope and objectives of the research. Identify and set up access to necessary tools and platforms.</li>
+        <li>Repository Discovery: Employ the GitHub API to identify repositories containing .dbml files. This API search facilitates a comprehensive list of potential projects for study.</li>
+        <li>Data Collection: Organize the resulting repository details in a structured TXT list, ensuring easy access and reference in later stages.</li>
+        <li>Repository Cloning: Clone each identified repository locally. This allows in-depth analysis, ensuring no data point is missed.</li>
+        <li>Data Extraction: Use Gitana, particularly focusing on Java and Python projects, to pull out commit histories, issues, user data, and other pertinent information from the cloned repositories.</li>
+        <li>Database Management: Streamline and store the extracted data in a structured MySQL database. This design facilitates rapid data retrieval and complex analyses.</li>
+        <li>DBML Analysis: Identify and extract the DBML files within each repository. These files are uploaded to DBDiagram.io for visualization.</li>
+        <li>Automation: With the help of Selenium, automate the process of uploading DBML files to DBDiagram.io, followed by the extraction of the schema model. This ensures consistency, time-efficiency, and error minimization.</li>
+        <li>Image Processing: Obtain the visual representations of the data schemas from DBDiagram.io and subject them to complexity analysis using OpenCV. Factors like shapes, sizes, and line counts offer insights into schema intricacy.</li>
+        <li>Repository Complexity Analysis: Based on MySQL data, evaluate the complexity of repositories, considering metrics like number of commits, issues, and contributors.</li>
+        <li>Final Analysis: Establish a definitive correlation between the complexities of data schemas and the associated repositories. Understand the implications of this correlation and draw meaningful conclusions.</li>
+        <li>Documentation and Reporting: Consolidate the research findings, draft comprehensive reports, and prepare presentations to showcase the results.</li>
       </ol>
       <p>
-        Through this workflow, we aim to unveil the impact of data schema complexity on project development and management on GitHub.
+        Adhering to this meticulous workflow, our research offers a comprehensive view of the interplay between data schema complexity and GitHub repository activities, revealing patterns that can influence best practices in project development and management.
       </p>
     </section>
+
+
+    <section id="presentation">
+
+    <h2>DbDiagram Presentation</h2>
+    <br>
+    <iframe src="dbdiagram.pdf" width="100%" height="600px"></iframe>
+    <br>
+    <h2>Gitana Presentation</h2>
+<br>
+    <iframe src="gitana.pdf" width="100%" height="600px"></iframe>
+    <br>
+  </section>
+
     
     <section id="presentation">
       <h2>Presentation</h2>
@@ -59,21 +76,66 @@
         <iframe src="https://drive.google.com/file/d/1I1wbh1OPV0UNCME3yP07tWTBWZTFkBeb/preview" frameborder="0"></iframe>
       </div>
     </section>
-    
+
+
+
     <section id="tools">
       <h2>Tools Used</h2>
       <p>
-        For our research, we utilized the following powerful tools:
+          For our research, we utilized the following powerful tools:
       </p>
       <ul>
-        <li><strong>GitHub API:</strong> We use the GitHub API to search for repositories containing .dbml files on GitHub. The API allows us to extract the list of files, along with the owner and repository names.</li>
-        <li><strong>Gitana:</strong> A data extraction tool to collect code, commit histories, and issue data from Java and Python projects on GitHub.</li>
-        <li><strong>DBDiagram.io:</strong> A visual database design tool for generating diagrams representing the complexity of database schemas.</li>
-        <li><strong>Selenium:</strong> To automate the process of uploading DBML files to DBDiagram.io.</li>
-        <li><strong>OpenCV:</strong> For image analysis to measure complexity based on shape, size, and line count.</li>
-        <li><strong>MySQL:</strong> To store and analyze the extracted data for each repository.</li>
+          <li>
+              <div class="text-content">
+                  <strong>GitHub API:</strong>
+                  <u> Description:</u> GitHub API provides a platform to programmatically interact with GitHub features and data. This makes it an indispensable resource when needing to extract, analyze, or manipulate data directly from GitHub repositories. <br>
+                  <u>Use in Research:</u> For our purposes, we utilized the GitHub API to specifically search for repositories containing .dbml files. The API was instrumental in allowing us to not just find these files, but also gather additional information, such as the owner of the repository and the repository's name.<br>
+                  <u>Website:</u> <a href="https://docs.github.com/en/rest">GitHub API Documentation</a>
+              </div>
+              <img src="GitApi.png" alt="GitHub API Image" class="tool-image">
+          </li>
+          <li>
+              <div class="text-content">
+                  <strong>Gitana:</strong>
+                  <u> Description:</u> Gitana is a powerful data extraction tool tailored to source code repositories. It's especially adept at collecting information from projects written in Java and Python on platforms like GitHub. <br>
+                  <u>Use in Research:</u> In our study, Gitana helped us extract valuable data like code details, commit histories, and issue information from target repositories.<br>                  <u>Website:</u> <a href="https://github.com/SOM-Research/Gitana">Gitana</a>
+              </div>
+              <img src="Gitana.png" alt="Gitana Image" class="tool-image">
+          </li>
+          <li>
+              <div class="text-content">
+                  <strong>DBDiagram.io:</strong>
+                  <u> Description:</u> DBDiagram.io is an intuitive and visual database design tool. It can quickly turn textual database schema definitions into clear, visual diagrams that represent the structure and relationships within the database. <br>
+                  <u>Use in Research:</u> To visualize the intricacy of various database schemas, we used DBDiagram.io. This provided a clear representation of complexity and relationships in the database schemas we analyzed.<br>                  <u>Website:</u> <a href="https://dbdiagram.io/">DBDiagram.io Official Site</a>
+              </div>
+              <img src="DbDiagram.png" alt="DBDiagram.io Image" class="tool-image">
+          </li>
+          <li>
+              <div class="text-content">
+                  <strong>Selenium:</strong>
+                  <u> Description:</u> Selenium is a robust tool for automating web browsers. This means that any task you can do manually on a browser, Selenium can automate it for you. <br>
+                  <u>Use in Research:</u> Our research process involved uploading DBML files to DBDiagram.io, and extracting the schema model. Instead of doing this manually for every file, we automated this task using Selenium, saving significant time and ensuring accuracy.<br>                  <u>Website:</u> <a href="https://www.selenium.dev/">Selenium Official Site</a>
+              </div>
+              <img src="Selenium.png" alt="Selenium Image" class="tool-image">
+          </li>
+          <li>
+              <div class="text-content">
+                  <strong>OpenCV:</strong>
+                  <u> Description:</u> OpenCV (Open Source Computer Vision Library) is an open-source computer vision and machine learning software library. It offers versatile tools for analyzing and processing images.<br>
+                  <u>Use in Research:</u> With the diagrams generated from DBDiagram.io, we employed OpenCV for image analysis. By analyzing shapes, sizes, and line counts in the diagrams, we gauged the complexity of the represented schemas.<br>                  <u>Website:</u> <a href="https://opencv.org/">OpenCV Official Site</a>
+              </div>
+              <img src="OpenCV.png" alt="OpenCV Image" class="tool-image">
+          </li>
+          <li>
+              <div class="text-content">
+                  <strong>MySQL:</strong>
+                  <u> Description:</u> MySQL is a widely-used relational database management system. It's known for its speed, reliability, and ease of use when it comes to storing and querying structured data. <br>
+                  <u>Use in Research:</u> All the data we extracted – be it from GitHub, DBDiagram.io, or any other source – was stored and analyzed in a MySQL database. This allowed us to run complex queries, analyze relationships, and extract insights from the aggregated data.<br>                  <u>Website:</u> <a href="https://www.mysql.com/">MySQL Official Site</a>
+              </div>
+              <img src="MySQL.png" alt="MySQL Image" class="tool-image">
+          </li>
       </ul>
-    </section>
+  </section>
   </main>
 
   <footer>

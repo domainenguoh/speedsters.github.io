@@ -127,3 +127,19 @@ a:hover {
     height: 300px;
   }
 }
+.text-content {
+  width: calc(100% - 70px); /* assuming your image width is 50px, adjusting for 20px spacing */
+  float: left;
+}
+
+.tool-image {
+  width: 200px;
+  float: right;
+  margin-left: 20px; /* spacing between text and image */
+}
+
+/* Clear float for each list item */
+ul > li {
+  overflow: auto;
+  margin-bottom: 10px; /* spacing between list items */
+}
