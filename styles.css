@@ -44,15 +44,17 @@ header h1 {
 /* Main Content Styles */
 main {
   padding: 20px;
-  max-width: 900px;
+  max-width: 2000px;
   margin: 0 auto;
 }
-
 section {
-  margin-bottom: 40px;
+  background-color: #f8f9fa;
+  margin-bottom: 100px;
+
 }
 
 section h2 {
+  color: #8b4513;
   font-size: 2.5rem;
   margin-bottom: 20px;
   text-align: center;
@@ -71,7 +73,7 @@ section iframe {
   margin: 0 auto;
   max-width: 100%;
   width: 100%;
-  height: 600px; /* Increase the height to make the iframes taller */
+  height: 1500px; /* Increase the height to make the iframes taller */
 }
 
 /* Tools Used Styles */
@@ -127,10 +129,6 @@ a:hover {
     height: 300px;
   }
 }
-.text-content {
-  width: calc(100% - 70px); /* assuming your image width is 50px, adjusting for 20px spacing */
-  float: left;
-}
 
 .tool-image {
   width: 200px;
@@ -142,4 +140,14 @@ a:hover {
 ul > li {
   overflow: auto;
   margin-bottom: 10px; /* spacing between list items */
+}
+/* Add this to your style.css */
+.insight img {
+  max-width: 100%; /* Set the maximum width of the images */
+  height: auto; /* Maintain the aspect ratio and adjust the height accordingly */
+}
+
+.preliminary-result img {
+  max-width: 100%; /* Set the maximum width of the images */
+  height: auto; /* Maintain the aspect ratio and adjust the height accordingly */
 }

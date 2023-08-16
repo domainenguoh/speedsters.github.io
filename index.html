@@ -14,70 +14,380 @@
   </header>
 
   <main>
-    <section id="description">
-      <h2>About the Project</h2>
+    <section id="welcome">
+      <h2>welcome</h2>
       <p>
-        Welcome to our fascinating research project! Here, we delve into the intriguing relationship between the complexity of a project's database schema and its GitHub activity.
-        Our hypothesis is that as the complexity of the database schema increases, there will be a corresponding rise in the number of commits and issues on GitHub. This correlation can provide valuable insights into the challenges and maintenance efforts involved in managing such projects.
+          Welcome to our research - the Data Schema Complexity Analysis. In this study, we explore the intricate relationship between a project's database schema complexity and its GitHub activity. Our working hypothesis suggests that as the complexity of the database schema increases, there's a corresponding augmentation in the number of commits and issues on GitHub. This correlation offers valuable insights into the challenges and maintenance efforts linked to managing such projects.
       </p>
-      <p>
-        Our research focuses on analyzing a diverse set of projects hosted on GitHub. By searching using GitHub API, extracting data using Gitana, visualizing database schemas with DBDiagram.io, and analyzing images with OpenCV, we strive to gain deeper insights into how schema design impacts project development and management.
-      </p>
-    </section>
-
-    <section id="workflow">
-      <h2>Research Workflow</h2>
-      <p>
-        To ensure the precision, accuracy, and comprehensiveness of our research, we've established a systematic and thorough workflow. This workflow guarantees that we obtain meaningful insights from the data while maintaining data integrity. The entire process can be divided into the following stages:
-      </p>
-      <ol>
-        <li>Initial Project Setup: Define the scope and objectives of the research. Identify and set up access to necessary tools and platforms.</li>
-        <li>Repository Discovery: Employ the GitHub API to identify repositories containing .dbml files. This API search facilitates a comprehensive list of potential projects for study.</li>
-        <li>Data Collection: Organize the resulting repository details in a structured TXT list, ensuring easy access and reference in later stages.</li>
-        <li>Repository Cloning: Clone each identified repository locally. This allows in-depth analysis, ensuring no data point is missed.</li>
-        <li>Data Extraction: Use Gitana, particularly focusing on Java and Python projects, to pull out commit histories, issues, user data, and other pertinent information from the cloned repositories.</li>
-        <li>Database Management: Streamline and store the extracted data in a structured MySQL database. This design facilitates rapid data retrieval and complex analyses.</li>
-        <li>DBML Analysis: Identify and extract the DBML files within each repository. These files are uploaded to DBDiagram.io for visualization.</li>
-        <li>Automation: With the help of Selenium, automate the process of uploading DBML files to DBDiagram.io, followed by the extraction of the schema model. This ensures consistency, time-efficiency, and error minimization.</li>
-        <li>Image Processing: Obtain the visual representations of the data schemas from DBDiagram.io and subject them to complexity analysis using OpenCV. Factors like shapes, sizes, and line counts offer insights into schema intricacy.</li>
-        <li>Repository Complexity Analysis: Based on MySQL data, evaluate the complexity of repositories, considering metrics like number of commits, issues, and contributors.</li>
-        <li>Final Analysis: Establish a definitive correlation between the complexities of data schemas and the associated repositories. Understand the implications of this correlation and draw meaningful conclusions.</li>
-        <li>Documentation and Reporting: Consolidate the research findings, draft comprehensive reports, and prepare presentations to showcase the results.</li>
-      </ol>
-      <p>
-        Adhering to this meticulous workflow, our research offers a comprehensive view of the interplay between data schema complexity and GitHub repository activities, revealing patterns that can influence best practices in project development and management.
-      </p>
-    </section>
-
-
-    <section id="presentation">
-
-    <h2>DbDiagram Presentation</h2>
-    <br>
-    <iframe src="dbdiagram.pdf" width="100%" height="600px"></iframe>
-    <br>
-    <h2>Gitana Presentation</h2>
-<br>
-    <iframe src="gitana.pdf" width="100%" height="600px"></iframe>
-    <br>
+      <p><strong>Out code repository in GitHub:</strong> <a href="https://github.com/rani-maklada/speedsters">https://github.com/rani-maklada/speedsters</a></p>
   </section>
 
-    
-    <section id="presentation">
-      <h2>Presentation</h2>
-      <div class="iframe-container">
-        <iframe src="https://my.visme.co/view/n0q7yqoz-ke7lp9j1ryyo29mw" frameborder="0"></iframe>
+  <section id="research-question">
+    <h2>Research Question</h2>
+    <p class="research-question">
+      How does the complexity of a project's database schema, as represented in DBDiagram.io, correlate with the number of commits and issues in the project's GitHub repository?
+    </p>
+  </section>
+
+  <section id="about-the-project">
+    <h2>About the Study</h2>
+    <p>
+      Welcome to our research exploration, the Data Schema Complexity Analysis. We're embarking on an investigative journey to uncover potential links between a project's intricate database structure and its GitHub dynamics. Our working hypothesis suggests that heightened database complexity might resonate with increased GitHub interactions, offering insights into the interplay between design sophistication and project management.
+    </p>
+    <p>
+      Our methodology revolves around a comprehensive analysis of diverse GitHub projects. Armed with the GitHub API, data extraction tools like Gitana, visualization platforms like DBDiagram.io, and image processing using OpenCV, we aim to illuminate how design decisions influence project trajectories.
+    </p>
+
+  </section>
+    <section id="gitana">
+      <img src="Gitana.png" alt="Gitana Image" class="tool-image">
+      <h2>Gitana: Extracting Crucial Data from Source Code Repositories</h2>
+        <h3>Tool Explanation:</h3>
+        <p>
+          Gitana is a potent data extraction tool tailored to source code repositories, with a special focus on Java and Python projects hosted on platforms like GitHub. It provides a streamlined approach to gathering essential information from repositories, offering insights into code details, commit histories, issue data, and more. With its versatility and efficiency, Gitana enables researchers to acquire a comprehensive understanding of a project's development lifecycle.
+        </p>
+        <h3>Utilization in Our Solution:</h3>
+        <p>
+          In our research journey, Gitana emerged as a critical instrument in collecting imperative data from source code repositories. We harnessed Gitana to systematically extract commit histories, user data, issue information, and other pertinent details from each identified repository. This extensive data formed the foundation of our analysis, providing insights into the trajectory of project development. Gitana's targeted data extraction capabilities allowed us to efficiently amass the necessary data points required to comprehensively understand the complexities of each project's evolution.
+        </p>
+    </section>
+
+    <section id="dbdiagram">
+      <img src="DbDiagram.png" alt="DBDiagram.io Image" class="tool-image">
+      <h2>DBDiagram.io: Visualizing and Analyzing Database Schemas</h2>
+
+        <h3>Tool Explanation:</h3>
+        <p>
+          DBDiagram.io is a powerful and intuitive database design tool. It offers the capability to transform textual database schema definitions into clear, visually engaging diagrams that represent the intricate structure and relationships within a database. With its user-friendly interface, DBDiagram.io facilitates the visualization of complex database designs, making it an invaluable tool for researchers and developers alike.
+        </p>
+        <h3>Utilization in Our Solution:</h3>
+        <p>
+          DBDiagram.io played a pivotal role in our research process by providing a visual representation of the database schemas within the repositories. With the help of Selenium automation, we seamlessly uploaded the DBML files, which contain the schema definitions, to DBDiagram.io. This step not only enabled us to visualize the complexities of the database structures but also set the stage for further analysis. The visual diagrams generated by DBDiagram.io formed the basis for our subsequent analysis using OpenCV. Through DBDiagram.io, we gained a visual understanding of the intricate relationships and structures within the databases, enhancing our insights into the projects' complexities.
+        </p>
+
+    </section>
+    <section id="challenges-solutions">
+      <h2>Challenges And Solutions</h2>
+
+        <p><strong>Selection of Projects:</strong></p>
+        <p>
+          The vast sea of available projects presented a challenge in pinpointing those best suited for our research. Crafting a script to meticulously extract relevant projects proved crucial in narrowing down our selection process.
+        </p>
+        <p><strong>Data Extraction:</strong></p>
+        <p>
+          Navigating the immense number of GitHub repositories and extracting the diverse data required posed a substantial hurdle. Tackling this challenge with Gitana initially posed difficulties, but through persistent efforts, we delved deep into the tool's workings and even managed to optimize its application.
+        </p>
+        <p><strong>Internet Navigation:</strong></p>
+        <p>
+          The intricacies of web-based navigation and the potential shifts in website structures presented obstacles in locating and accessing desired databases. To streamline this process, we embraced Selenium for automated browser navigation, resulting in enhanced efficiency.
+        </p>
+
+    </section>
+
+    <section id="dataset-preprocessing">
+      <h2>Dataset and Preprocessing</h2>
+
+        <p>
+          Our dataset is derived from a diverse sample of projects on GitHub. This encompassed project code, commit histories, issues, and database schemas.
+        </p>
+        <p><strong>Early Processing Steps Included:</strong></p>
+        <p><strong>Data Cleaning:</strong></p>
+        <p>
+          The database logs often included a plethora of extraneous information, necessitating the extraction of relevant details.
+        </p>
+        <p><strong>Schema Representation:</strong></p>
+        <p>
+          The raw database schema data underwent transformation into a visual format using DBDiagram.io. This transformation facilitated ease of complexity analysis. The tool even converted the code into a user-friendly structure for enhanced workability.
+        </p>
+
+    </section>
+
+    <section id="preliminary-results">
+      <h2>Preliminary Results</h2>
+      <div class="preliminary-result">
+        <p>
+          Our initial findings indicate a correlation between the complexity of the project's foundational schema and the number of committers. In general, as the complexity of a database schema increases, so does the number of commits, which suggests a higher maintenance level and potential in project management.
+        </p>
+        <img src="correlation_plot.png" alt="correlation_plot">
       </div>
     </section>
 
-    <section id="video">
-      <h2>Project Video</h2>
-      <div class="iframe-container">
-        <iframe src="https://drive.google.com/file/d/1I1wbh1OPV0UNCME3yP07tWTBWZTFkBeb/preview" frameborder="0"></iframe>
-      </div>
+    <section id="research-findings">
+      <h2>Research Findings</h2>
+
+        <p>
+          Our hypothesis posited that an increase in database schema complexity would correspond to a rise in the number of commits and issues. These indicators signify elevated maintenance and potential project management difficulties. Our preliminary findings substantiate this hypothesis. This underscores the significance of meticulous database design in software development projects. Although a complex schema can offer heightened flexibility and robustness, it can also lead to escalated commits and issues, potentially impeding overall project efficiency.
+        </p>
+
     </section>
 
 
+    <section id="challenges">
+      <h2>Challenges</h2>
+
+        <p><strong>Outdated Gitana Tool:</strong></p>
+        <p>
+          The aging Gitana tool posed compatibility problems with recent dependencies. We mitigated this by utilizing a VM workspace with appropriate versions.
+        </p>
+        <p><strong>Data Variance:</strong></p>
+        <p>
+          Defining and measuring schema complexity posed challenges due to data variance. Our initial solution involves counting tables, with future incorporation of additional indicators.
+        </p>
+        <p><strong>Extracting Relevant Projects:</strong></p>
+        <p>
+          Selecting appropriate projects with databases for research introduced challenges due to project diversity in size and scope.
+        </p>
+
+    </section>
+
+    <section id="solution-process">
+      <h2>Solution Process Overview</h2>
+
+        <p><strong>GitHub API and Repository Discovery:</strong></p>
+        <p>
+          The research commences by utilizing the GitHub API to search repositories for specific file extensions, such as .dbml. This phase serves as the initial data collection step, identifying relevant projects for further analysis.
+        </p>
+        <p><strong>Data Collection and Storage:</strong></p>
+        <p>
+          Repositories identified through the GitHub API search are compiled and stored in a structured format, often a TXT file. This compilation acts as a central repository, facilitating easy access and reference for the duration of the research.
+        </p>
+        <p><strong>Data Extraction with Gitana:</strong></p>
+        <p>
+          Leveraging tools like Gitana, the research extracts essential information from repositories, such as commit histories, issue data, and user interactions. This extracted data forms the foundation for subsequent analysis and insights.
+        </p>
+        <p><strong>DBDiagram.io Visualization with Selenium:</strong></p>
+        <p>
+          DBDiagram.io is employed to visualize database schemas based on the extracted data. Automation tools like Selenium assist in streamlining the process by automating the uploading of data to the visualization platform.
+        </p>
+        <p><strong>Visual Analysis with OpenCV:</strong></p>
+        <p>
+          OpenCV is harnessed for visual analysis, evaluating images or diagrams generated by tools like DBDiagram.io. This analysis often involves assessing shapes, patterns, sizes, and other visual elements to derive insights.
+        </p>
+        <p><strong>Repository Complexity Analysis:</strong></p>
+        <p>
+          Further extraction of data using tools like Gitana is conducted to gain an in-depth understanding of repository activities. This includes details about commits, issues, and other interactions, contributing to the overall assessment.
+        </p>
+        <p><strong>Correlation and Graphical Analysis:</strong></p>
+        <p>
+          The research process synthesizes data from different sources, aiming to establish correlations and patterns. Graphical representations are employed to visualize these correlations, offering a visual summary of insights.
+        </p>
+        <p><strong>Insightful Documentation and Reporting:</strong></p>
+        <p>
+          The final phase involves documentation and reporting. The insights derived from the analysis, correlations, and visualizations are documented in comprehensive reports and presentations that communicate the research findings effectively.
+        </p>
+
+    </section>
+
+    <section id="research-workflow">
+      <h2>Research Workflow</h2>
+
+        <ol>
+          <li>
+            <h3>Initial Project Setup:</h3>
+            <p>
+              Before delving into the research, ensure the proper setup of your environment. Clone the project repository and navigate through the requirements.txt file to install the necessary dependencies. For utilizing Gitana, an additional setup is required: Gitana is developed on Windows 7 and relies on the following:
+            </p>
+            <ul>
+              <li>Git 2.9.3</li>
+              <li>MySQL Server 5.6</li>
+              <li>Python 2.7.6</li>
+            </ul>
+            <p><strong>User Manual and Setup Steps:</strong></p>
+            <p>Each team member should follow the installation instructions for Gitana's requirements.</p>
+            <p>Activation of the virtual machine is crucial for Gitana usage.</p>
+            <p><strong>Input Format:</strong></p>
+            <p>Project repository and dependencies.</p>
+            <p>Virtual machine activation steps.</p>
+            <p><strong>Output Format:</strong></p>
+            <p>Prepared environment for research.</p>
+          </li>
+          <li>
+            <h3>Repository Discovery:</h3>
+            <p>
+              Before data extraction, you need to create your GitHub access token. This token acts as the input to the research process. The GitHub API will utilize this token to search for repositories containing .dbml files. The result of this search is then saved in a structured .txt file.
+            </p>
+            <p><strong>Input Format:</strong></p>
+            <p>GitHub access token.</p>
+            <p><strong>User Manual and Setup Steps:</strong></p>
+            <p>Detailed instructions on creating a GitHub access token.</p>
+            <p><strong>Output Format:</strong></p>
+            <p>Structured .txt file containing repository details.</p>
+          </li>
+          <li>
+            <h3>Data Collection:</h3>
+            <p>
+              Building upon the .txt file created in the previous step, the data collection process involves extracting essential information from each identified repository.
+            </p>
+            <p><strong>Input Format:</strong></p>
+            <p>Structured .txt file with repository details.</p>
+            <p><strong>Output Format:</strong></p>
+            <p>Extracted repository data.</p>
+          </li>
+          <li>
+            <h3>Repository Cloning:</h3>
+            <p>
+              Gitana's capabilities require local cloning of repositories. Utilizing the list of repositories, clone each identified repository locally.
+            </p>
+            <p><strong>Input Format:</strong></p>
+            <p>List of repositories from .txt file.</p>
+            <p><strong>User Manual and Setup Steps:</strong></p>
+            <p>Step-by-step instructions for repository cloning.</p>
+            <p><strong>Output Format:</strong></p>
+            <p>Cloned repositories locally.</p>
+          </li>
+          <li>
+            <h3>Data Extraction:</h3>
+            <p>
+              Leveraging Gitana, extract detailed commit histories, issue data, user information, and more from each cloned repository. Save this data for further analysis.
+            </p>
+            <p><strong>Input Format:</strong></p>
+            <p>Extracted repository data.</p>
+            <p><strong>Output Format:</strong></p>
+            <p>Structured MySQL database with extracted data.</p>
+          </li>
+          <li>
+            <h3>Database Management:</h3>
+            <p>
+              Streamline and store the extracted data in a structured MySQL database. This design facilitates rapid data retrieval and complex analyses.
+            </p>
+            <p><strong>Input Format:</strong></p>
+            <p>Extracted repository data.</p>
+            <p><strong>Output Format:</strong></p>
+            <p>Structured MySQL database.</p>
+          </li>
+          <li>
+            <h3>DBML Analysis:</h3>
+            <p>
+              Utilize the GitHub API to extract .dbml files from repositories and save them as separate files.
+            </p>
+            <p><strong>Input Format:</strong></p>
+            <p>Extracted repository data.</p>
+            <p><strong>Output Format:</strong></p>
+            <p>.dbml files saved individually.</p>
+          </li>
+          <li>
+            <h3>Repository Cloning:</h3>
+            <p>
+              Gitana's capabilities require local cloning of repositories. Utilizing the list of repositories, clone each identified repository locally.
+            </p>
+            <p><strong>Input Format:</strong></p>
+            <p>List of repositories from .txt file.</p>
+            <p><strong>User Manual and Setup Steps:</strong></p>
+            <p>Step-by-step instructions for repository cloning.</p>
+            <p><strong>Output Format:</strong></p>
+            <p>Cloned repositories locally.</p>
+          </li>
+          <li>
+            <h3>Data Extraction:</h3>
+            <p>
+              Leveraging Gitana, extract detailed commit histories, issue data, user information, and more from each cloned repository. Save this data for further analysis.
+            </p>
+            <p><strong>Input Format:</strong></p>
+            <p>Extracted repository data.</p>
+            <p><strong>Output Format:</strong></p>
+            <p>Structured MySQL database with extracted data.</p>
+          </li>
+          <li>
+            <h3>Database Management:</h3>
+            <p>
+              Streamline and store the extracted data in a structured MySQL database. This design facilitates rapid data retrieval and complex analyses.
+            </p>
+            <p><strong>Input Format:</strong></p>
+            <p>Extracted repository data.</p>
+            <p><strong>Output Format:</strong></p>
+            <p>Structured MySQL database.</p>
+          </li>
+          <li>
+            <h3>DBML Analysis:</h3>
+            <p>
+              Utilize the GitHub API to extract .dbml files from repositories and save them as separate files.
+            </p>
+            <p><strong>Input Format:</strong></p>
+            <p>Extracted repository data.</p>
+            <p><strong>Output Format:</strong></p>
+            <p>.dbml files saved individually.</p>
+          </li>
+          <li>
+            <h3>Automation:</h3>
+            <p>
+              Utilize Selenium to automate the uploading of .dbml files to DBDiagram.io. This step yields diagram images that are saved in the same folder.
+            </p>
+            <p><strong>Input Format:</strong></p>
+            <p>Individual .dbml files.</p>
+            <p><strong>User Manual and Setup Steps:</strong></p>
+            <p>Selenium automation instructions.</p>
+            <p><strong>Output Format:</strong></p>
+            <p>Diagram images saved locally.</p>
+          </li>
+          <li>
+            <h3>Image Processing:</h3>
+            <p>
+              Analyze the diagram images using OpenCV to extract insights such as the number of tables and schema complexity.
+            </p>
+            <p><strong>Input Format:</strong></p>
+            <p>Diagram images.</p>
+            <p><strong>Output Format:</strong></p>
+            <p>Analyzed diagram insights.</p>
+          </li>
+          <li>
+            <h3>Repository Complexity Analysis:</h3>
+            <p>
+              Continue using Gitana to extract commit histories and issue data for each repository, contributing to an in-depth understanding of their development dynamics.
+            </p>
+            <p><strong>Input Format:</strong></p>
+            <p>Extracted repository data.</p>
+            <p><strong>Output Format:</strong></p>
+            <p>Commit and issue insights.</p>
+          </li>
+          <li>
+            <h3>Final Analysis:</h3>
+            <p>
+              Combine insights from the diagram analysis and repository complexities to establish correlations. This contributes to the holistic understanding of the interplay between schema intricacies and repository activities.
+            </p>
+            <p><strong>Input Format:</strong></p>
+            <p>Diagram analysis and repository complexities.</p>
+            <p><strong>Output Format:</strong></p>
+            <p>Correlations and insights.</p>
+          </li>
+          <li>
+            <h3>Documentation and Reporting:</h3>
+            <p>
+              Compile the research findings, correlations, and insights to craft comprehensive reports and presentations.
+            </p>
+            <p><strong>Input Format:</strong></p>
+            <p>Correlations, insights, and analysis results.</p>
+            <p><strong>Output Format:</strong></p>
+            <p>Research reports and presentations.</p>
+          </li>
+        </ol>
+
+    </section>
+
+    <section id="insights">
+      <h2>Insights and Interpretations</h2>
+      
+      <div class="insight">
+        <h3>Direct Correlation between Schema Complexity and Commits</h3>
+        <p>As the complexity of the database schema (number of tables) increases, there seems to be a rise in the number of commits. This could be due to multiple reasons:</p>
+        <ul>
+          <li>A complex schema might require more iterative development, leading to more commits.</li>
+          <li>Changes in one part of a complex schema might necessitate changes in other parts, leading to multiple commits for a single logical change.</li>
+        </ul>
+        <img src="commits_vs_tables.png" alt="commits_vs_tables">
+      </div>
+      
+      <div class="insight">
+        <h3>Issues and Schema Complexity</h3>
+        <p>The relationship between the number of issues and schema complexity might be more nuanced. While it's logical to assume that a more complex schema could lead to more issues, the actual correlation might depend on factors like the experience of the development team, the clarity of requirements, and the thoroughness of testing.</p>
+        <img src="commits_vs_issues.png" alt="commits_vs_issues">
+      </div>
+      
+      <div class="insight">
+        <h3>Repo Complexity as a Unified Metric</h3>
+        <p>Combining the number of commits and issues into a single "repo complexity" metric provides a holistic view of project activity. A strong correlation between repo complexity and schema complexity would underscore the importance of careful database design.</p>
+        <img src="repo_vs_schema_complexity.png" alt="repo_vs_schema_complexity">
+      </div>
+    </section>
 
     <section id="tools">
       <h2>Tools Used</h2>
@@ -136,8 +446,76 @@
           </li>
       </ul>
   </section>
-  </main>
 
+
+  <section id="lessons-learned">
+    <h2>Lessons Learned</h2>
+
+      <p><strong>Robust Tools Are Essential:</strong></p>
+      <p>
+        The use of powerful, up-to-date tools is vital in data extraction and analysis. Our Gitana challenges underscore the importance of tool maintenance.
+      </p>
+      <p><strong>Importance of Preprocessing:</strong></p>
+      <p>
+        Effective data cleaning and normalization are paramount for accurate and dependable results.
+      </p>
+      <p><strong>Database Design:</strong></p>
+      <p>
+        Our findings underscore the significance of meticulous database schema design in software development. While complex schemas offer expanded functionality, they can also precipitate increased maintenance and potential project management quandaries.
+      </p>
+
+  </section>
+
+  <section id="future-work">
+    <h2>Future Work And Improvement</h2>
+
+      <ul>
+        <li>Improving the tool: Updating Gitana or finding a modern alternative can streamline data extraction and research efficiency.</li>
+        <li>Expanding the scope: Extending research to encompass more projects, languages, and diverse database systems can provide a comprehensive perspective.</li>
+        <li>Complexity metrics: Refining database schema complexity metrics can yield a nuanced understanding of how various complexity aspects impact maintenance and project management.</li>
+      </ul>
+
+
+  <!-- Resources Section -->
+<section id="resources">
+  <h2>Resources</h2>
+  <ul>
+    <li><a href="Speedsters.pdf" target="final project">final project (PDF)</a></li>
+    <li><a href="dbdiagram.pdf" target="dbdiagram">dbdiagram (PDF)</a></li>
+    <li><a href="gitana.pdf" target="gitana">gitana (PDF)</a></li>
+    <li><a href="https://my.visme.co/view/n0q7yqoz-ke7lp9j1ryyo29mw" target="Presentation">Presentation2</a></li>
+    <li><a href="Speedsters.mp4" target="video presentation">video presentation</a></li>
+  </ul>
+</section>
+  </section>
+  <section id="presentation">
+    <h2>DbDiagram Presentation</h2>
+    <br>
+    <iframe src="dbdiagram.pdf"></iframe>
+    <br>
+    <h2>Gitana Presentation</h2>
+    <br>
+    <iframe src="gitana.pdf"></iframe>
+    <br>
+  </section>
+
+    
+    <section id="presentation">
+      <h2>Presentation</h2>
+      <div class="iframe-container">
+        <iframe src="https://my.visme.co/view/n0q7yqoz-ke7lp9j1ryyo29mw" frameborder="0"></iframe>
+      </div>
+    </section>
+
+    <section id="video">
+      <h2>Project Video</h2>
+      <div class="iframe-container">
+        <iframe src="Speedsters.mp4" frameborder="0"></iframe>
+      </div>
+    </section>
+
+
+  </main>
   <footer>
     <p>&copy; 2023 Data Schema Complexity Analysis. All rights reserved.</p>
   </footer>
