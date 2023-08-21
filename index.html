@@ -175,38 +175,6 @@
           The final phase involves documentation and reporting. The insights derived from the analysis, correlations, and visualizations are documented in comprehensive reports and presentations that communicate the research findings effectively.
         </p>
     </section>
-
-    <section id="analysis-process">
-      <h2>Analyzing the Database Schema and Repository Data</h2>
-
-      <h3>Extracting Data with GitHub API</h3>
-      <img src="github-api.PNG" alt="GitHub API Code">
-
-      <h3>Data Extraction with Gitana</h3>
-      <img src="gitana-code.PNG" alt="Gitana Code">
-
-      <h3>Database Tables</h3>
-      <img src="tables.PNG" alt="DBML Tables">
-
-      <h3>Visualizing Database Schema</h3>
-      <img src="dbdiagram_schema.PNG" alt="DBDiagram.io Visualization">
-    
-      <h3>Image Analysis with OpenCV</h3>
-      <img src="OpenCV_Analyze.png" alt="OpenCV Analysis">
-    
-      <h3>Extracting Commit Data with MySQL</h3>
-      <img src="MySql_data.PNG" alt="MySQL Queries">
-    
-      <h3>Analyzing Commit Data</h3>
-      <p>By processing the extracted commit data, we gain valuable insights into the project's development dynamics. We can analyze commit frequency, trends, and patterns to better understand the correlation between schema complexity and development activity.</p>
-    
-      <h3>CSV Data Visualization</h3>
-      <img src="data.PNG" alt="CSV Data Visualization">
-    
-      <p>By combining these steps, we create a comprehensive approach to understanding how the complexity of the database schema impacts the development activity and management of software projects.</p>
-    </section>
-    
-
     <section id="research-workflow">
       <h2>Research Workflow</h2>
 
@@ -395,16 +363,16 @@
 
         <!-- Step 1: Video Upload -->
         <div class="workflow-step">
-          <h2>1. Video Upload</h2>
+          <h2>Video Running our Code</h2>
           <video width="700" height="600" controls>
               <source src="running_project.mp4" type="video/mp4">
           </video>
           <p>running video of the code of the project</p>
         </div>
 
-        <!-- Step 2: GitHub API -->
+        <!-- Step 1: GitHub API -->
         <div class="workflow-step">
-          <h2>2. GitHub API</h2>
+          <h2>1. GitHub API</h2>
           <!-- Query Image -->
           <figure>
               <img src="query-demo.png" alt="GitHub API query for DBML files">
@@ -430,9 +398,9 @@
           </figure>
           <p>Connect to the GitHub API to retrieve the repo name.</p>
         </div>
-        <!-- Step 3: Clone the Repo -->
+        <!-- Step 2: Clone the Repo -->
         <div class="workflow-step">
-          <h2>3. Clone the Repo</h2>
+          <h2>2. Clone the Repo</h2>
           <!-- Cloning Progress Image -->
           <figure>
               <img src="cloning-demo.png" alt="Progress of cloning the repository">
@@ -448,9 +416,9 @@
           <p>Using Git commands to clone the identified repositories locally.</p>
         </div>
 
-        <!-- Step 4: Extract DBML Files -->
+        <!-- Step 3: Extract DBML Files -->
         <div class="workflow-step">
-          <h2>4. Extract DBML Files</h2>
+          <h2>3. Extract DBML Files</h2>
           
           <!-- Saving DBML Files Image -->
           <figure>
@@ -468,9 +436,9 @@
         </div>
 
 
-        <!-- Step 5: Save Commits & Issues -->
+        <!-- Step 4: Save Commits & Issues -->
         <div class="workflow-step">
-          <h2>5. Save Commits & Issues</h2>
+          <h2>4. Save Commits & Issues</h2>
           
           <!-- MySQL Commits Image -->
           <figure>
@@ -487,9 +455,9 @@
           <p>Using Gitana, the commits and issues from each repository are extracted and stored in a MySQL database.</p>
         </div>
 
-        <!-- Step 6: Generate DB Diagram -->
+        <!-- Step 5: Generate DB Diagram -->
         <div class="workflow-step">
-          <h2>6. Generate DB Diagram</h2>
+          <h2>5. Generate DB Diagram</h2>
 
           <!-- Video of DB Diagram Generation with Selenium -->
           <figure>
@@ -515,30 +483,30 @@
           <p>Process of generating a visual database diagram from the DBML files using dbdiagram.io and Selenium.</p>
         </div>
 
-        <!-- Step 7: Analyze Image with OpenCV -->
+        <!-- Step 6: Analyze Image with OpenCV -->
         <div class="workflow-step">
-            <h2>7. Analyze Image with OpenCV</h2>
+            <h2>6. Analyze Image with OpenCV</h2>
             <img src="result-tables-opencv-demo.png" alt="DB Diagram from dbdiagram.io">
             <p>Analyze the diagram image to determine the number of tables.</p>
         </div>
 
-        <!-- Step 8: Generate Summary -->
+        <!-- Step 7: Generate Summary -->
         <div class="workflow-step">
-            <h2>8. Generate Summary</h2>
+            <h2>7. Generate Summary</h2>
             <img src="summary-txt-demo.PNG" alt="Summarize data for each repo txt">
             <p>Summarize data for each repo, including commit count, issue count, and table count.</p>
         </div>
 
-        <!-- Step 9: Export to CSV -->
+        <!-- Step 8: Export to CSV -->
         <div class="workflow-step">
-            <h2>9. Export to CSV</h2>
+            <h2>8. Export to CSV</h2>
             <img src="summay-csv-demo.PNG" alt="Summarize data for each repo csv">
             <p>Transfer the summary data to a CSV file.</p>
         </div>
 
-        <!-- Step 10: Visualize with Pandas -->
+        <!-- Step 9: Visualize with Pandas -->
         <div class="workflow-step">
-          <h2>10. Data Visualization</h2>
+          <h2>9. Data Visualization</h2>
           <p>Use Python's pandas library to create graphs based on the CSV data.</p>
 
           <!-- commits_vs_issues Image -->
