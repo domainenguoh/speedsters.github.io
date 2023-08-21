@@ -151,3 +151,22 @@ ul > li {
   max-width: 100%; /* Set the maximum width of the images */
   height: auto; /* Maintain the aspect ratio and adjust the height accordingly */
 }
+
+.workflow-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  border: 2px solid #333;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  height: auto; /* Changed from [Desired Height] to auto */
+  max-width: 100%;
+}
+
+.workflow-step img {
+  max-width: 1000px; /* or any desired value */
+  height: auto; /* maintain the aspect ratio */
+}
